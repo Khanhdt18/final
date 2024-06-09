@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--
+	
+	
+
+-->
+<html>
+	<head>
+		<title> Karen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
+						
+						<li><a href="#retail"><span class="fas fa-building"></span></a></li>
+						<li><a href="#corporate"><span class="fas fa-building"></span></a></li>
+						<li><a href="#Portfolio management"><span class="fas fa-building"></span></a></li>
+						
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- 
+					 -->
+						<section id="banner">
+							<div class="inner">
+								<h1>Hey, I'm Karen</h1>
+								<p>A data-mining application for real estate valuation and portfolio management </a></p>
+								<ul class="actions">
+									<li><a href="#retail" class="button alt scrolly big">Retail customer</a></li>
+								    <li><a href="#corporate" class="button alt scrolly big">Corporate customer</a></li>
+								    <li><a href="#Portfolio management" class="button alt scrolly big">Portfolio management</a></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Retail -->
+						<section id="retail">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+									<header class="special">
+										<h2>Wondering how much your new home cost ?</h2>
+									</header>
+									<div class="content">
+										<div class="media">
+											<a href="../static/images/fulls/01.jpg"><img src="../static/images/fulls/01.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/fulls/05.jpg"><img src="../static/images/fulls/05.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/fulls/09.jpg"><img src="../static/images/fulls/09.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/fulls/02.jpg"><img src="../static/images/fulls/02.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/fulls/06.jpg"><img src="../static/images/fulls/06.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/fulls/10.jpg"><img src="../static/images/fulls/10.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+										    <a href="../static/images/fulls/03.jpg"><img src="../static/images/fulls/03.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/fulls/07.jpg"><img src="../static/images/fulls/07.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+									</div>
+									<footer>
+										<a href="#contact" class="button big">Start your valuation</a>
+									</footer>
+								</div>
+						</section>
+                   
+					<!-- Contact -->
+						<section id="contact">
+							<!-- Social -->
+								<div class="social column">
+									<h3>Instruction - Retail customer</h3>
+									<p>Please input the data to the form at the right hand side. Grade: descibe how good a house is interm of design and construction.
+									You are expected to input a number from 1 to 13, where 1-3 falls short of building construction and design, 7 has an average of contrustion and design, and 11-13 have a high quality level.
+									Square foot of living is square footage of your house's interior living space. Zipcode is postal code of area where the house locates. You could select on the map if you do not know.   </p>
+									<p>Note: This valuation services for informational purposes only. It does not tend to be a legal appraisal for any real estate asset.</p>
+									<h3>Follow me</h3>
+									<ul class="icons">
+										<li><a href="https://twitter.com/KhanhTr86773244" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/dtkhanhs/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</div>
+
+							<!-- Form -->
+								<div class="column">
+									<h3>Please fill in the form</h3>
+									<p> * for more precise valuation, please use corporate customer form at the lower section </p>
+									<form action="{{ url_for('predict1')}}" method="post">
+										<div class="field half first">
+											<label for="grade">Grade</label>
+											<input name="grade" id="grade" type="text" placeholder="Grade" required="required" >
+										</div>
+										<div class="field half first">
+											<label for="Square foot of living">Square foot of living</label>
+											<input name="Square foot of living" id="Square foot of living" type="text" placeholder="Square foot of living" required="required" >
+										</div>
+										<div class="field half first">
+											<label for="Zipcode">Zipcode</label> <a href="https://www.mapdevelopers.com/what-is-my-zip-code.php" target="_blank">* find your zipcode here</a>
+											<input name="Zipcode" id="Zipcode" type="text" placeholder="Zipcode" required="required" >
+										</div>
+										
+										<ul class="actions">
+											<li><button class="button" type="submit" >Get valuation</button></li>
+										</ul>
+									</form>
+									
+									   
+                                      
+									
+								</div>
+
+						</section>
+                        <!-- Corporate -->
+						<section id="corporate">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+									<header class="special">
+										<h2>Wondering how much your real estate portfolio currently worth ?</h2>
+									</header>
+									<div class="content">
+									    <div class="media">
+											<a href="../static/images/corp/04.jpg"><img src="../static/images/corp/04.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/corp/01.png"><img src="../static/images/corp/01.png" alt="" title="This right here is a caption." /></a>
+										</div>
+									
+										<div class="media">
+											<a href="../static/images/corp/03.jpg"><img src="../static/images/corp/03.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/corp/02.jpg"><img src="../static/images/corp/02.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/corp/07.jpg"><img src="../static/images/corp/07.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/corp/06.jpg"><img src="../static/images/corp/06.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										
+										<div class="media">
+											<a href="../static/images/corp/05.jpeg"><img src="../static/images/corp/05.jpeg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+										    <a href="../static/images/corp/08.jpg"><img src="../static/images/corp/08.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+									
+									</div>
+									<footer>
+										<a href="#Instruction" class="button big">Start your valuation</a>
+									</footer>
+								</div>
+						 </section>
+						<!-- Instruction -->
+					   	<section id="Instruction">
+							<!-- Social -->
+								<div class="social column">
+									<h3>Instruction - Corporate customer</h3>
+									<p> Please download and fill in the excel form. The meaning of columns is described in the excel file. After fulfilling the form, please submit to receive the 							
+									 results.   </p>
+									<p>Note: This valuation services for informational purposes only. It does not tend to be a legal appraisal for any real estate asset.</p>
+									<h3>Follow me</h3>
+									<ul class="icons">
+										<li><a href="https://twitter.com/KhanhTr86773244" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/dtkhanhs/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</div>
+
+							<!-- Form -->
+								<div class="column">
+									<h3>Get your real estate portfolio's valuation</h3>
+									<p>Please download and fill in the form.</p>								
+								
+								    <form action="{{ url_for('predict2')}}" method="post" enctype="multipart/form-data">
+										<ul class="actions">
+											 <a href="{{url_for('download_file')}}" <buttom class= "button">Download</button></a>
+									<br></br>
+									<br></br>
+									<p>Please upload and submit data file.</p>	    
+									    
+										   
+										    <li><input type="file" id="file" name="file" required="required" > </li>
+										    <li> <input class="button" type="submit" value="Upload"></li>
+										</ul>
+									</form>
+								</div>
+                        </section>
+                        
+                        <!-- Portfolio management -->
+						<section id="Portfolio management">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+									<header class="special">
+										<h2>Want to diversify your portfolio by being exposed to real estate ?</h2>
+									</header>
+									<div class="content">
+										<div class="media">
+											<a href="../static/images/portfolio/03.jpg"><img src="../static/images/portfolio/03.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/portfolio/06.jpg"><img src="../static/images/portfolio/06.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/portfolio/04.jpg"><img src="../static/images/portfolio/04.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/portfolio/02.jpg"><img src="../static/images/portfolio/02.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/portfolio/07.jpg"><img src="../static/images/portfolio/07.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/portfolio/01.jpg"><img src="../static/images/portfolio/01.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+										    <a href="../static/images/portfolio/05.jpg"><img src="../static/images/portfolio/05.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="../static/images/portfolio/08.jpg"><img src="../static/images/portfolio/08.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+									</div>
+									<footer>
+										<a href="#Portfolio" class="button big">Start managing your portfolio</a>
+									</footer>
+								</div>
+						 </section>
+						<!-- Portfolio -->
+					   	<section id="Portfolio">
+							<!-- Social -->
+								<div class="social column">
+									<h3>Instruction - Portfolio management</h3>
+									<p> Please download and fill in the excel form. 
+									<br><br />
+									On sheet 1, you are meant to provide the information about your real estate portfolio. The meaning of columns is described in the excel file. 
+									On sheet 2, please enter your list of publicly traded asset like stocks, ETFs, etc. to the first column.
+									After fulfilling the form, please submit to receive the 							
+									 results.   </p>
+									<p>Note: This services are for informational purposes only. It does not tend to be served as any business report or investment advice.</p>
+									<h3>Follow me</h3>
+									<ul class="icons">
+										<li><a href="https://twitter.com/KhanhTr86773244" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/dtkhanhs/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</div>
+								
+							<!-- Form -->
+								<div class="column">
+									<h3>Get your portfolio's allocation</h3>
+									<p>Please download and fill in the form.</p>								
+								
+								    <form action="{{ url_for('portfolio_mangement')}}" method="post" enctype="multipart/form-data">
+										<ul class="actions">
+											 <a href="{{url_for('download_file_1')}}" <buttom class= "button">Download</button></a>
+									<br></br>
+									<br></br>
+									<p>Please upload and submit data file.</p>	    
+									    
+										   
+										    <li><input type="file" id="file" name="file" required="required" > </li>
+										    <li> <input class="button" type="submit" value="Upload"></li>
+										</ul>
+									</form>
+								</div>
+                        </section>
+                        
+                        
+			<!-- Footer -->
+						<footer id="footer">
+							<div class="copyright">
+								&copy; Khanh Tran 2020, powered by Templated </a>
+							</div>
+						</footer>
+				</section>
+		</div>
+                 
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="../static/assets/js/skel.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>
+					
